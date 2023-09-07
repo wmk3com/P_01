@@ -5,9 +5,9 @@ import datetime
 
 HOME_URL = 'https://www.larepublica.co/'
 XPATH_LINK_TO_ARTICLE = '//h2/a/@href'
-XPATH_TITLE = '//h1[@class="headline"]/a/text()'
-XPATH_SUMMARY = '//div[@class="lead"]/p/text()'
-XPATH_BODY = '//div[@class="articleWrapper  "]/p[not(@class)]/text()'
+XPATH_TITLE = '//h1/a/text()'
+XPATH_SUMMARY = '//div/p/text()'
+XPATH_BODY = '//div/p[not(@class)]/text()'
 
 
 def parse_notice(link, today):
